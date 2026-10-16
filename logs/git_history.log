@@ -1,0 +1,9 @@
+* 42650da - 2312686 - Phan Le Xuan Manh (Fri Oct 16 18:38:53 2026 +0700): Remove .coverage from repo
+* bdf9eee - 2312686 - Phan Le Xuan Manh (Fri Oct 16 18:35:24 2026 +0700): Fix syntax error, restore green build
+* 24f0f1b - 2312686 - Phan Le Xuan Manh (Fri Oct 16 18:33:52 2026 +0700): Break build on purpose: syntax error
+* 76387a1 - 2312686 - Phan Le Xuan Manh (Fri Oct 16 18:32:15 2026 +0700): Add Medium/Hard level mocking tests
+* 8b3aba1 - 2312686 - Phan Le Xuan Manh (Fri Oct 16 15:38:08 2026 +0700): ci: upload coverage report artifact
+* 850318b - 2312686 - Phan Le Xuan Manh (Fri Oct 16 14:26:49 2026 +0700): Trigger CI to observe quality gate
+* b6602dd - 2312686 - Phan Le Xuan Manh (Fri Oct 16 14:18:00 2026 +0700): Add linter and coverage quality gate (fail-under=80)
+* ddd800b - 2312686 - Phan Le Xuan Manh (Fri Oct 16 14:11:47 2026 +0700): Add basic CI workflow
+* fa7f710 - 2312686 - Phan Le Xuan Manh (Fri Oct 16 13:59:28 2026 +0700): initial commit
