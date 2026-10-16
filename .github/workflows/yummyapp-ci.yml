@@ -1,20 +1,24 @@
 name: YummyApp Mobile Backend CI Pipeline
+
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
   mobile-test-job:
     runs-on: ubuntu-latest
+
     steps:
       - name: 1. Checkout Source Code
         uses: actions/checkout@v4
+
       - name: 2. Set up Python Environment
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+
       - name: 3. Install Dependencies
         run: |
           python -m pip install --upgrade pip
@@ -32,3 +36,11 @@ jobs:
           coverage report -m
           coverage html -d coverage_html
           coverage report --fail-under=80
+
+      - name: 6. Upload HTML Coverage Report Artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: YummyApp-Coverage-Report
+          path: coverage_html/
+          retention-days: 7
